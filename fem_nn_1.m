@@ -1,6 +1,10 @@
-% Authors:
+% SCRIPT:
+%       fem_nn_1.m
+%
+% AUTHORS:
 %       Eduardo Terrés and Julia Novo
-% Description:
+%
+% DESCRIPTION:
 %       Matlab script for training a FEM based neuronal network
 %       where all weights and biases are free.
 %% Configuration and initialization of parameters
@@ -9,18 +13,18 @@ epsilon = 0.1;
 upwind = false;
 
 % Grid
-N = 40;
+N = 20;
 h = 1/N;
 grid = linspace(0, 1, N+1);
 
 % Training parameters
-Niter = 1e4; % Number of iterations
-eta = 1e-4; % Learning rate
-beta = 1e-4; % Regularization parameter
+Niter = 2 * 1e5; % Number of iterations
+eta = 1e-6; % Learning rate
+beta = 0; % Regularization parameter
 
 % Initial information. If true, W2 and b2 are initialized
 % to predefined values instead of random values.
-initial_info = false;
+initial_info = true;
 
 % Theoretical solution (for plotting and calculating error)
 y = @(x) 1 / (1 - exp(1 / epsilon)) * (exp(x / epsilon) - 1) + x;
@@ -150,17 +154,16 @@ for counter = 1:Niter
 end
 
 %% Plot and save results
+% NOTE: folder gen must exist
 
-% Salvar vector de pesos y sesgos
 save('gen/weights_biases.mat', 'b2', 'W2', 'W3');
 save('gen/costs.mat', 'savecost', 'L2_distance');
 save('gen/config.mat', 'epsilon', 'N', 'Niter', 'eta');
 
-% NOTE: folder gen must exist
-% Plot coste
-plot_costs(savecost, L2_distance, 'gen/costs');
+% Plot cost and L2 error
+plot_costs(savecost, L2_distance, 'padded', 'gen/costs');
 
-% Plot resultado
+% Plot NN and theoretical solution
 plot_result(@F, b2, W2, W3, epsilon, N, false, 'gen/nn_output')
 plot_result(@F, b2, W2, W3, epsilon, N, true, 'gen/nn_output_gridlines')
 
@@ -171,8 +174,8 @@ end
 
 %% Cost function
 function costval = cost(F_iter, Dj, N, b2, W2, W3, beta)
-    % Es necesario haber calculado previamente los valores de
-    % F_iter y Dj para los pesos y sesgos actuales.
+    % F_iter y Dj must have been calculated for the same weights and
+    % biases.
     costval = F_iter{1}^2 + F_iter{N+1}^2 + ...
         beta * (sum(b2 .^ 2) + sum(W2 .^ 2) + sum(W3 .^ 2));
     for j = 2:N
