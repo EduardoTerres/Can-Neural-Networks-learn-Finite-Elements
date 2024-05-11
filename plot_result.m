@@ -1,8 +1,5 @@
-% SCRIPT:
-%       fem_nn_1.m
-%
 % FUNCTION NAME:
-%   plot_results
+%   plot_result
 %
 % AUTHORS:
 %       Eduardo Terrés and Julia Novo
