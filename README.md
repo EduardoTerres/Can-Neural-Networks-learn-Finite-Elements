@@ -46,7 +46,11 @@ The figures in the article have been generated according to the following config
   </tr>
   <tr>
     <td>Figure 8 - fem_nn_2.m</td>
-    <td colspan="2">epsilon = 0.001;<br> N = 40;<br> Niter = 1e6;<br> eta = 1e-7;<br> beta = 0;<br> initial_info = true;<br> upwind = true;</td>
+    <td colspan="2">epsilon = 0.001;<br> N = 40;<br> Niter = 2 * 1e6;<br> eta = 1e-7;<br> beta = 0;<br> initial_info = true;<br> upwind = true;</td>
+  </tr>
+  <tr>
+    <td>Figure 9 - fem_nn_2.m</td>
+    <td colspan="2">epsilon = 0.001;<br> N = 40;<br> Niter = 4 * 1e5;<br> eta = 1e-9;<br> beta = 0;<br> initial_info = true;<br> upwind = true;</td>
   </tr>
 </table>
 
