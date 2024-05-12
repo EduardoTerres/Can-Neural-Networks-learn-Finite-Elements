@@ -24,12 +24,12 @@ The figures in the article have been generated according to the following config
   </tr>
   <tr>
     <td>Figure 3 - fem_nn_1.m</td>
-    <td>epsilon = 0.1;<br> N = 40;<br> Niter = 3 * 1e5;<br> eta = 1e-7;<br> beta = 0;<br> initial_info = true;<br> upwind = false;</td>
+    <td>epsilon = 0.1;<br> N = 40;<br> Niter = 5 * 1e5;<br> eta = 1e-7;<br> beta = 0;<br> initial_info = true;<br> upwind = false;</td>
     <td>epsilon = 0.1;<br> N = 100;<br> Niter = 3 * 1e5;<br> eta = 1e-8;<br> beta = 0;<br> initial_info = true;<br> upwind = false;</td>
   </tr>
   <tr>
     <td>Figure 4 - fem_nn_2.m</td>
-    <td colspan="2">epsilon = 0.1;<br> N = 20;<br> Niter = 2 * 1e5;<br> eta = 1e-6;<br> beta = 0;<br> initial_info = true;<br> upwind = false;</td>
+    <td colspan="2">epsilon = 0.1;<br> N = 20;<br> Niter = 2 * 1e5;<br> eta = 1e-6;<br> beta = 0;<br> upwind = false;</td>
   </tr>
   <tr>
     <td>Figure 5, Table 1, Table 2 - error_plots_table.m</td>
@@ -46,11 +46,11 @@ The figures in the article have been generated according to the following config
   </tr>
   <tr>
     <td>Figure 8 - fem_nn_2.m</td>
-    <td colspan="2">epsilon = 0.001;<br> N = 40;<br> Niter = 2 * 1e6;<br> eta = 1e-7;<br> beta = 0;<br> initial_info = true;<br> upwind = true;</td>
+    <td colspan="2">epsilon = 0.001;<br> N = 40;<br> Niter = 2 * 1e6;<br> eta = 1e-7;<br> beta = 0;<br> upwind = true;</td>
   </tr>
   <tr>
     <td>Figure 9 - fem_nn_2.m</td>
-    <td colspan="2">epsilon = 0.001;<br> N = 40;<br> Niter = 4 * 1e5;<br> eta = 1e-9;<br> beta = 0;<br> initial_info = true;<br> upwind = true;</td>
+    <td colspan="2">epsilon = 0.001;<br> N = 100;<br> Niter = 4 * 1e5;<br> eta = 1e-9;<br> beta = 0;<br> upwind = true;</td>
   </tr>
 </table>
 
