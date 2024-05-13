@@ -1,7 +1,10 @@
 This repository is linked and contains the necessary code to reproduce the numerical experiments of the following research paper:
 
-[Can Neural Networks learn Finite Elements?](https://www.researchgate.net/publication/380483586_Can_Neural_Networks_learn_Finite_Elements)
+[ResearchGate] [Can Neural Networks learn Finite Elements?](https://www.researchgate.net/publication/380483586_Can_Neural_Networks_learn_Finite_Elements)
 
+[arXiv] [Can Neural Networks learn Finite Elements?](https://arxiv.org/pdf/2405.06488)
+
+Three MATLAB scripts are provided:
 - Script **fem_nn_1.m** trains the neural network by letting all weights and biases $b^{[2]}, W^{[2]}$ and $W^{[3]}$ change freely.
 - Script **fem_nn_2.m** trains the neural network by initializing $b^{[2]}$ and $W^{[2]}$ to predetermined values and letting weights $W^{[3]}$ change freely.
 - Script **error_plots_table.m** computes the L2 and H1 errors and generates error plots.
