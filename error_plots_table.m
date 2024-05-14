@@ -8,7 +8,7 @@
 %       Matlab script for training a FEM based neuronal network
 %       where b2 and W2 are fixed and W3 is free.
 %% Evaluation grid
-N_ref = 1000;
+N_ref = 20000;
 h_ref = 1 / N_ref;
 grid_ref = linspace(0, 1, N_ref + 1);
 grid_ref = grid_ref(2:end-1);
