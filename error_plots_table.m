@@ -5,8 +5,9 @@
 %       Eduardo Terrés and Julia Novo
 %
 % DESCRIPTION:
-%       Matlab script for training a FEM based neuronal network
-%       where b2 and W2 are fixed and W3 is free.
+%       Matlab script for computing the L2 and H1 errors and
+%       generating plots of the absolute difference between
+%       NN and FEM.
 %% Evaluation grid
 N_ref = 20000;
 h_ref = 1 / N_ref;
