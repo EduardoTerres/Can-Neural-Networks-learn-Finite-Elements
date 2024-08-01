@@ -1,5 +1,10 @@
 This repository is linked and contains the necessary code to reproduce the numerical experiments of the following research article:
 
+Published article:
+[Elsevier - Journal of Computational and Applied Mathematics (JCAM)] [Can Neural Networks learn Finite Elements?](https://www.sciencedirect.com/science/article/pii/S0377042724004175?via%3Dihub)
+
+Preprints:
+
 [ResearchGate] [Can Neural Networks learn Finite Elements?](https://www.researchgate.net/publication/380483586_Can_Neural_Networks_learn_Finite_Elements)
 
 [arXiv] [Can Neural Networks learn Finite Elements?](https://arxiv.org/pdf/2405.06488)
