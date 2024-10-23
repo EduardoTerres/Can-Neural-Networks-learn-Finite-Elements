@@ -4,12 +4,6 @@ This repository is linked and contains the necessary code to reproduce the numer
 
 [Elsevier - Journal of Computational and Applied Mathematics (JCAM)] [Can Neural Networks learn Finite Elements?](https://www.sciencedirect.com/science/article/pii/S0377042724004175?via%3Dihub)
 
-**Preprints**
-
-[ResearchGate] [Can Neural Networks learn Finite Elements?](https://www.researchgate.net/publication/380483586_Can_Neural_Networks_learn_Finite_Elements)
-
-[arXiv] [Can Neural Networks learn Finite Elements?](https://arxiv.org/pdf/2405.06488)
-
 Three MATLAB scripts are provided:
 - Script **fem_nn_1.m** trains the neural network by letting all weights and biases $b^{[2]}, W^{[2]}$ and $W^{[3]}$ change freely.
 - Script **fem_nn_2.m** trains the neural network by initializing $b^{[2]}$ and $W^{[2]}$ to predetermined values and letting weights $W^{[3]}$ change freely.
